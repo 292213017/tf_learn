@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/liuhy/projects/tf_learn/src/lane_find/include/lane_find/lane_find.h
+/home/liuhy/workspace/tf_learn/src/lane_find/include/lane_find/lane_find.h
 ros/ros.h
 -
 fstream
@@ -30,13 +30,13 @@ algorithm
 vector
 -
 
-/home/liuhy/projects/tf_learn/src/lane_find/src/lane_node.cpp
+/home/liuhy/workspace/tf_learn/src/lane_find/src/lane_node.cpp
 ros/ros.h
 -
 iostream
 -
 ../include/lane_find/lane_find.h
-/home/liuhy/projects/tf_learn/src/lane_find/include/lane_find/lane_find.h
+/home/liuhy/workspace/tf_learn/src/lane_find/include/lane_find/lane_find.h
 
 /opt/ros/melodic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

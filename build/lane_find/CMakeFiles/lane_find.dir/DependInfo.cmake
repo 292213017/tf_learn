@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/liuhy/projects/tf_learn/src/lane_find/src/lane_node.cpp" "/home/liuhy/projects/tf_learn/build/lane_find/CMakeFiles/lane_find.dir/src/lane_node.cpp.o"
+  "/home/liuhy/workspace/tf_learn/src/lane_find/src/lane_node.cpp" "/home/liuhy/workspace/tf_learn/build/lane_find/CMakeFiles/lane_find.dir/src/lane_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/liuhy/projects/tf_learn/build/lane_find/CMakeFiles/lane_find_lib.dir/DependInfo.cmake"
+  "/home/liuhy/workspace/tf_learn/build/lane_find/CMakeFiles/lane_find_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

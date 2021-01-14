@@ -2,7 +2,6 @@
 #include <ros/ros.h>
 #include <fstream>
 #include <iomanip>
-#include <glog/logging.h>
 #include <sensor_msgs/NavSatFix.h>
 #include <nav_msgs/Path.h>
 #include "../../ThirdParty/GeographicLib/include/LocalCartesian.hpp"

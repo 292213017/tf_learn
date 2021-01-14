@@ -1,2 +1,2 @@
-lane_find:tf_test
--DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_CXX_STANDARD=14 -DCATKIN_DEVEL_PREFIX=/home/liuhy/projects/tf_learn/devel -DCMAKE_INSTALL_PREFIX=/home/liuhy/projects/tf_learn/install -G Unix Makefiles
+lane_find:point_cloud:tf_test
+-DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_CXX_STANDARD=14 -DCATKIN_DEVEL_PREFIX=/home/liuhy/workspace/tf_learn/devel -DCMAKE_INSTALL_PREFIX=/home/liuhy/workspace/tf_learn/install -G Unix Makefiles

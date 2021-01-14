@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liuhy/projects/tf_learn/src
+CMAKE_SOURCE_DIR = /home/liuhy/workspace/tf_learn/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liuhy/projects/tf_learn/build
+CMAKE_BINARY_DIR = /home/liuhy/workspace/tf_learn/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liuhy/projects/tf_learn/build/CMakeFiles /home/liuhy/projects/tf_learn/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liuhy/workspace/tf_learn/build/CMakeFiles /home/liuhy/workspace/tf_learn/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liuhy/projects/tf_learn/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liuhy/workspace/tf_learn/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -961,6 +961,19 @@ actionlib_generate_messages_py/fast:
 .PHONY : actionlib_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named point_cloud
+
+# Build rule for target.
+point_cloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_cloud
+.PHONY : point_cloud
+
+# fast build rule for target.
+point_cloud/fast:
+	$(MAKE) -f point_cloud/CMakeFiles/point_cloud.dir/build.make point_cloud/CMakeFiles/point_cloud.dir/build
+.PHONY : point_cloud/fast
+
+#=============================================================================
 # Target rules for targets named tf_test_lib
 
 # Build rule for target.
@@ -1099,6 +1112,7 @@ help:
 	@echo "... lane_find"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
+	@echo "... point_cloud"
 	@echo "... tf_test_lib"
 	@echo "... tf_test"
 	@echo "... gps_map"

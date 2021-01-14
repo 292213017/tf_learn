@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liuhy/projects/tf_learn/src
+CMAKE_SOURCE_DIR = /home/liuhy/workspace/tf_learn/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liuhy/projects/tf_learn/build
+CMAKE_BINARY_DIR = /home/liuhy/workspace/tf_learn/build
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/liuhy/projects/tf_learn/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/liuhy/projects/tf_learn/build/test_results
+	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/liuhy/workspace/tf_learn/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/liuhy/projects/tf_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liuhy/projects/tf_learn/src /home/liuhy/projects/tf_learn/src /home/liuhy/projects/tf_learn/build /home/liuhy/projects/tf_learn/build /home/liuhy/projects/tf_learn/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/liuhy/workspace/tf_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liuhy/workspace/tf_learn/src /home/liuhy/workspace/tf_learn/src /home/liuhy/workspace/tf_learn/build /home/liuhy/workspace/tf_learn/build /home/liuhy/workspace/tf_learn/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

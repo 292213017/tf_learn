@@ -15,9 +15,9 @@
 
      <!-- <node pkg="tf" type="static_transform_publisher" name="base_world_to_grid" args="-25 0 0 0 0  1 /world /grid  100"/> -->
 
-    <node pkg="rviz" type="rviz" name="rviz" output="screen"
+    <!-- <node pkg="rviz" type="rviz" name="rviz" output="screen"
         args="-d $(find gpsmapping)/ros_wrapper/rviz/default.rviz" required="true">
-    </node>
+    </node> -->
 
 
 

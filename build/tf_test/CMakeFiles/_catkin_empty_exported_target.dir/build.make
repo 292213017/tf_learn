@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liuhy/projects/tf_learn/src
+CMAKE_SOURCE_DIR = /home/liuhy/workspace/tf_learn/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liuhy/projects/tf_learn/build
+CMAKE_BINARY_DIR = /home/liuhy/workspace/tf_learn/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ tf_test/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_export
 .PHONY : tf_test/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 tf_test/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/liuhy/projects/tf_learn/build/tf_test && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/liuhy/workspace/tf_learn/build/tf_test && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : tf_test/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 tf_test/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/liuhy/projects/tf_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liuhy/projects/tf_learn/src /home/liuhy/projects/tf_learn/src/tf_test /home/liuhy/projects/tf_learn/build /home/liuhy/projects/tf_learn/build/tf_test /home/liuhy/projects/tf_learn/build/tf_test/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/liuhy/workspace/tf_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liuhy/workspace/tf_learn/src /home/liuhy/workspace/tf_learn/src/tf_test /home/liuhy/workspace/tf_learn/build /home/liuhy/workspace/tf_learn/build/tf_test /home/liuhy/workspace/tf_learn/build/tf_test/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tf_test/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

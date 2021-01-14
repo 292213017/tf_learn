@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lane_find_lib.dir/src/lane_find.cpp.o"
-  "/home/liuhy/projects/tf_learn/devel/lib/liblane_find_lib.pdb"
-  "/home/liuhy/projects/tf_learn/devel/lib/liblane_find_lib.so"
+  "/home/liuhy/workspace/tf_learn/devel/lib/liblane_find_lib.pdb"
+  "/home/liuhy/workspace/tf_learn/devel/lib/liblane_find_lib.so"
 )
 
 # Per-language clean rules from dependency scanning.

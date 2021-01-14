@@ -1,8 +1,8 @@
-# Install script for directory: /home/liuhy/projects/tf_learn/src/tf_test
+# Install script for directory: /home/liuhy/workspace/tf_learn/src/tf_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liuhy/projects/tf_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/liuhy/workspace/tf_learn/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,23 +38,23 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuhy/projects/tf_learn/build/tf_test/catkin_generated/installspace/tf_test.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuhy/workspace/tf_learn/build/tf_test/catkin_generated/installspace/tf_test.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf_test/cmake" TYPE FILE FILES
-    "/home/liuhy/projects/tf_learn/build/tf_test/catkin_generated/installspace/tf_testConfig.cmake"
-    "/home/liuhy/projects/tf_learn/build/tf_test/catkin_generated/installspace/tf_testConfig-version.cmake"
+    "/home/liuhy/workspace/tf_learn/build/tf_test/catkin_generated/installspace/tf_testConfig.cmake"
+    "/home/liuhy/workspace/tf_learn/build/tf_test/catkin_generated/installspace/tf_testConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf_test" TYPE FILE FILES "/home/liuhy/projects/tf_learn/src/tf_test/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf_test" TYPE FILE FILES "/home/liuhy/workspace/tf_learn/src/tf_test/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/liuhy/projects/tf_learn/build/tf_test/ThirdParty/GeographicLib/cmake_install.cmake")
+  include("/home/liuhy/workspace/tf_learn/build/tf_test/ThirdParty/GeographicLib/cmake_install.cmake")
 
 endif()
 
