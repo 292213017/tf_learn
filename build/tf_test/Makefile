@@ -90,17 +90,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -111,6 +100,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -181,6 +181,21 @@ tf_test_lib: tf_test/CMakeFiles/tf_test_lib.dir/rule
 tf_test_lib/fast:
 	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/tf_test_lib.dir/build.make tf_test/CMakeFiles/tf_test_lib.dir/build
 .PHONY : tf_test_lib/fast
+
+# Convenience name for target.
+tf_test/CMakeFiles/point_cloud_map.dir/rule:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f CMakeFiles/Makefile2 tf_test/CMakeFiles/point_cloud_map.dir/rule
+.PHONY : tf_test/CMakeFiles/point_cloud_map.dir/rule
+
+# Convenience name for target.
+point_cloud_map: tf_test/CMakeFiles/point_cloud_map.dir/rule
+
+.PHONY : point_cloud_map
+
+# fast build rule for target.
+point_cloud_map/fast:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/point_cloud_map.dir/build.make tf_test/CMakeFiles/point_cloud_map.dir/build
+.PHONY : point_cloud_map/fast
 
 # Convenience name for target.
 tf_test/CMakeFiles/tf_test.dir/rule:
@@ -281,6 +296,33 @@ src/gps_wrapper.cpp.s:
 	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/tf_test_lib.dir/build.make tf_test/CMakeFiles/tf_test_lib.dir/src/gps_wrapper.cpp.s
 .PHONY : src/gps_wrapper.cpp.s
 
+src/mapping.o: src/mapping.cpp.o
+
+.PHONY : src/mapping.o
+
+# target to build an object file
+src/mapping.cpp.o:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/tf_test_lib.dir/build.make tf_test/CMakeFiles/tf_test_lib.dir/src/mapping.cpp.o
+.PHONY : src/mapping.cpp.o
+
+src/mapping.i: src/mapping.cpp.i
+
+.PHONY : src/mapping.i
+
+# target to preprocess a source file
+src/mapping.cpp.i:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/tf_test_lib.dir/build.make tf_test/CMakeFiles/tf_test_lib.dir/src/mapping.cpp.i
+.PHONY : src/mapping.cpp.i
+
+src/mapping.s: src/mapping.cpp.s
+
+.PHONY : src/mapping.s
+
+# target to generate assembly for a file
+src/mapping.cpp.s:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/tf_test_lib.dir/build.make tf_test/CMakeFiles/tf_test_lib.dir/src/mapping.cpp.s
+.PHONY : src/mapping.cpp.s
+
 src/odom.o: src/odom.cpp.o
 
 .PHONY : src/odom.o
@@ -307,6 +349,33 @@ src/odom.s: src/odom.cpp.s
 src/odom.cpp.s:
 	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/tf_test_lib.dir/build.make tf_test/CMakeFiles/tf_test_lib.dir/src/odom.cpp.s
 .PHONY : src/odom.cpp.s
+
+src/pc_map_node.o: src/pc_map_node.cpp.o
+
+.PHONY : src/pc_map_node.o
+
+# target to build an object file
+src/pc_map_node.cpp.o:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/point_cloud_map.dir/build.make tf_test/CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.o
+.PHONY : src/pc_map_node.cpp.o
+
+src/pc_map_node.i: src/pc_map_node.cpp.i
+
+.PHONY : src/pc_map_node.i
+
+# target to preprocess a source file
+src/pc_map_node.cpp.i:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/point_cloud_map.dir/build.make tf_test/CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.i
+.PHONY : src/pc_map_node.cpp.i
+
+src/pc_map_node.s: src/pc_map_node.cpp.s
+
+.PHONY : src/pc_map_node.s
+
+# target to generate assembly for a file
+src/pc_map_node.cpp.s:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/point_cloud_map.dir/build.make tf_test/CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.s
+.PHONY : src/pc_map_node.cpp.s
 
 src/tf_test.o: src/tf_test.cpp.o
 
@@ -344,12 +413,13 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... edit_cache"
 	@echo "... tf_test_lib"
+	@echo "... point_cloud_map"
 	@echo "... rebuild_cache"
 	@echo "... tf_test"
 	@echo "... gps_map"
 	@echo "... _catkin_empty_exported_target"
-	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... src/gps_map_node.o"
@@ -358,9 +428,15 @@ help:
 	@echo "... src/gps_wrapper.o"
 	@echo "... src/gps_wrapper.i"
 	@echo "... src/gps_wrapper.s"
+	@echo "... src/mapping.o"
+	@echo "... src/mapping.i"
+	@echo "... src/mapping.s"
 	@echo "... src/odom.o"
 	@echo "... src/odom.i"
 	@echo "... src/odom.s"
+	@echo "... src/pc_map_node.o"
+	@echo "... src/pc_map_node.i"
+	@echo "... src/pc_map_node.s"
 	@echo "... src/tf_test.o"
 	@echo "... src/tf_test.i"
 	@echo "... src/tf_test.s"

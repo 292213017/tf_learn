@@ -987,6 +987,19 @@ tf_test_lib/fast:
 .PHONY : tf_test_lib/fast
 
 #=============================================================================
+# Target rules for targets named point_cloud_map
+
+# Build rule for target.
+point_cloud_map: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_cloud_map
+.PHONY : point_cloud_map
+
+# fast build rule for target.
+point_cloud_map/fast:
+	$(MAKE) -f tf_test/CMakeFiles/point_cloud_map.dir/build.make tf_test/CMakeFiles/point_cloud_map.dir/build
+.PHONY : point_cloud_map/fast
+
+#=============================================================================
 # Target rules for targets named tf_test
 
 # Build rule for target.
@@ -1114,6 +1127,7 @@ help:
 	@echo "... actionlib_generate_messages_py"
 	@echo "... point_cloud"
 	@echo "... tf_test_lib"
+	@echo "... point_cloud_map"
 	@echo "... tf_test"
 	@echo "... gps_map"
 	@echo "... _catkin_empty_exported_target"

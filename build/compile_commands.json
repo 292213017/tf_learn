@@ -61,6 +61,16 @@
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -Dtf_test_lib_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g -fPIC   -std=gnu++14 -o CMakeFiles/tf_test_lib.dir/src/mapping.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/mapping.cpp",
+  "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/mapping.cpp"
+},
+{
+  "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g   -std=gnu++14 -o CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/pc_map_node.cpp",
+  "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/pc_map_node.cpp"
+},
+{
+  "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
   "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g   -std=gnu++14 -o CMakeFiles/tf_test.dir/src/tf_test.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/tf_test.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/tf_test.cpp"
 },

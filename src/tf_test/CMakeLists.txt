@@ -34,6 +34,7 @@ include_directories(
 add_library(tf_test_lib
   src/odom.cpp
   src/gps_wrapper.cpp
+  src/mapping.cpp
 )
 
 target_link_libraries(tf_test_lib
@@ -48,5 +49,10 @@ target_link_libraries(tf_test
 
 add_executable(gps_map src/gps_map_node.cpp)
 target_link_libraries(gps_map 
+  tf_test_lib
+  )
+
+add_executable(point_cloud_map src/pc_map_node.cpp)
+target_link_libraries(point_cloud_map 
   tf_test_lib
   )

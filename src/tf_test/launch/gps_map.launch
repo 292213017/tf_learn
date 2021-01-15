@@ -11,7 +11,7 @@
      <node pkg="tf" type="static_transform_publisher" name="world_to_grid" args="0 0 0 0 0  0 /world  /map 100"/>
 
     <node name="nmea_topic_driver" pkg="nmea_navsat_driver" type="nmea_topic_driver" output="screen" />
-    <node name="gps_node" pkg="tf_test" type="gps_map" output="screen" />
+    <node name="gps_node" pkg="tf_test" type="point_cloud_map" output="screen" />
 
      <!-- <node pkg="tf" type="static_transform_publisher" name="base_world_to_grid" args="-25 0 0 0 0  1 /world /grid  100"/> -->
 

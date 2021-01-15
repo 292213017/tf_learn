@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tf_test_lib.dir/src/odom.cpp.o"
   "CMakeFiles/tf_test_lib.dir/src/gps_wrapper.cpp.o"
+  "CMakeFiles/tf_test_lib.dir/src/mapping.cpp.o"
   "/home/liuhy/workspace/tf_learn/devel/lib/libtf_test_lib.pdb"
   "/home/liuhy/workspace/tf_learn/devel/lib/libtf_test_lib.so"
 )

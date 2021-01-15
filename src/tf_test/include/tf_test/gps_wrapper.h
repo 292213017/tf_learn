@@ -4,6 +4,7 @@
 #include <iomanip>
 #include <sensor_msgs/NavSatFix.h>
 #include <nav_msgs/Path.h>
+#include <Eigen/Core>
 #include "../../ThirdParty/GeographicLib/include/LocalCartesian.hpp"
 #include "nav_msgs/OccupancyGrid.h"
 #include "base_type.h"

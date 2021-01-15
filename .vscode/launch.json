@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             // "program": "${workspaceFolder}/devel/lib/tf_test/gps_map",
-            "program": "${workspaceFolder}/devel/lib/point_cloud/point_cloud",
+            "program": "${workspaceFolder}/devel/lib/tf_test/point_cloud_map",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
