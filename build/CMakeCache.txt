@@ -282,6 +282,9 @@ SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 //Name of the computer/site where compile is being run
 SITE:STRING=liuhy_lab
 
+//The directory containing a CMake configuration file for Sophus.
+Sophus_DIR:PATH=/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus/svs_build
+
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 

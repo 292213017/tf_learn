@@ -91,6 +91,7 @@ point_cloud_map_EXTERNAL_OBJECTS =
 /home/liuhy/workspace/tf_learn/devel/lib/tf_test/point_cloud_map: tf_test/CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.o
 /home/liuhy/workspace/tf_learn/devel/lib/tf_test/point_cloud_map: tf_test/CMakeFiles/point_cloud_map.dir/build.make
 /home/liuhy/workspace/tf_learn/devel/lib/tf_test/point_cloud_map: /home/liuhy/workspace/tf_learn/devel/lib/libtf_test_lib.so
+/home/liuhy/workspace/tf_learn/devel/lib/tf_test/point_cloud_map: /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus/svs_build/libSophus.so
 /home/liuhy/workspace/tf_learn/devel/lib/tf_test/point_cloud_map: /opt/ros/melodic/lib/libtf.so
 /home/liuhy/workspace/tf_learn/devel/lib/tf_test/point_cloud_map: /opt/ros/melodic/lib/libtf2_ros.so
 /home/liuhy/workspace/tf_learn/devel/lib/tf_test/point_cloud_map: /opt/ros/melodic/lib/libactionlib.so

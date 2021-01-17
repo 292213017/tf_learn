@@ -26,6 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/liuhy/workspace/tf_learn/src/point_cloud/package.xml"
   "/home/liuhy/workspace/tf_learn/src/tf_test/CMakeLists.txt"
   "/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/CMakeLists.txt"
+  "/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus/svs_build/SophusConfig.cmake"
   "/home/liuhy/workspace/tf_learn/src/tf_test/package.xml"
   "/opt/ros/melodic/share/actionlib/cmake/actionlib-msg-extras.cmake"
   "/opt/ros/melodic/share/actionlib/cmake/actionlibConfig-version.cmake"

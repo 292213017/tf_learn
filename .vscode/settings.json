@@ -64,6 +64,10 @@
         "memory_resource": "cpp",
         "optional": "cpp",
         "random": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "core": "cpp",
+        "csignal": "cpp",
+        "condition_variable": "cpp",
+        "mutex": "cpp"
     }
 }

@@ -51,47 +51,47 @@
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -Dtf_test_lib_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g -fPIC   -std=gnu++14 -o CMakeFiles/tf_test_lib.dir/src/odom.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/odom.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -Dtf_test_lib_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g -fPIC   -std=gnu++14 -o CMakeFiles/tf_test_lib.dir/src/odom.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/odom.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/odom.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -Dtf_test_lib_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g -fPIC   -std=gnu++14 -o CMakeFiles/tf_test_lib.dir/src/gps_wrapper.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/gps_wrapper.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -Dtf_test_lib_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g -fPIC   -std=gnu++14 -o CMakeFiles/tf_test_lib.dir/src/gps_wrapper.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/gps_wrapper.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/gps_wrapper.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -Dtf_test_lib_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g -fPIC   -std=gnu++14 -o CMakeFiles/tf_test_lib.dir/src/mapping.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/mapping.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -Dtf_test_lib_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g -fPIC   -std=gnu++14 -o CMakeFiles/tf_test_lib.dir/src/mapping.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/mapping.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/mapping.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g   -std=gnu++14 -o CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/pc_map_node.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g   -std=gnu++14 -o CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/pc_map_node.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/pc_map_node.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g   -std=gnu++14 -o CMakeFiles/tf_test.dir/src/tf_test.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/tf_test.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g   -std=gnu++14 -o CMakeFiles/tf_test.dir/src/tf_test.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/tf_test.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/tf_test.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include  -g   -std=gnu++14 -o CMakeFiles/gps_map.dir/src/gps_map_node.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/gps_map_node.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g   -std=gnu++14 -o CMakeFiles/gps_map.dir/src/gps_map_node.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/gps_map_node.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/gps_map_node.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test/ThirdParty/GeographicLib",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -DlibGeographiccc_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include  -g -fPIC   -std=gnu++14 -o CMakeFiles/libGeographiccc.dir/src/LocalCartesian.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/LocalCartesian.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -DlibGeographiccc_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include  -g -fPIC   -std=gnu++14 -o CMakeFiles/libGeographiccc.dir/src/LocalCartesian.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/LocalCartesian.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/LocalCartesian.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test/ThirdParty/GeographicLib",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -DlibGeographiccc_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include  -g -fPIC   -std=gnu++14 -o CMakeFiles/libGeographiccc.dir/src/Geocentric.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/Geocentric.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -DlibGeographiccc_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include  -g -fPIC   -std=gnu++14 -o CMakeFiles/libGeographiccc.dir/src/Geocentric.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/Geocentric.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/Geocentric.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test/ThirdParty/GeographicLib",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -DlibGeographiccc_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include  -g -fPIC   -std=gnu++14 -o CMakeFiles/libGeographiccc.dir/src/Math.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/Math.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -DlibGeographiccc_EXPORTS -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include  -g -fPIC   -std=gnu++14 -o CMakeFiles/libGeographiccc.dir/src/Math.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/Math.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/src/Math.cpp"
 }
 ]

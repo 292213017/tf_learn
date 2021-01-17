@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIC   -std=gnu++14
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"tf_test\" -DlibGeographiccc_EXPORTS
 
-CXX_INCLUDES = -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include 
+CXX_INCLUDES = -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib/./include 
 
