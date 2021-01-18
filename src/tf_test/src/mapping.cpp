@@ -7,14 +7,14 @@ mapping::mapping(ros::NodeHandle& nh)
     // ros::param::get("map_resolution" , resolution);
     // ros::param::get("map_width",  width);
     // ros::param::get("map_height",  height );
-    resolution = 0.1;
-    width = 2000;
-    height =2000;
-    createmap();
-    // gps_position_sub_ = nh.subscribe("/gps", 10,  GpsPositionCallback);
+    // resolution = 0.1;
+    // width = 2000;
+    // height =2000;
+    // createmap();
+    gps_position_sub_ = nh.subscribe("/gps", 10,  &mapping::GpsPositionCallback,this);
     odom_publish = nh.advertise<nav_msgs::Odometry>("map_odom", 100);
-    map_pub_ = nh.advertise<nav_msgs::OccupancyGrid>("/gridMap", 1);
-    point_cloud_sub_ = nh.subscribe("/point_cloud1",100,&mapping::point_cloud_sub, this);
+    // map_pub_ = nh.advertise<nav_msgs::OccupancyGrid>("/gridMap", 1);
+    // point_cloud_sub_ = nh.subscribe("/point_cloud1",100,&mapping::point_cloud_sub, this);
     path_position_sub_ = nh.subscribe("/globalEstimator/global_odometry", 100,  &mapping::odom_sub, this);
 
 }
@@ -48,6 +48,7 @@ void mapping::GpsPositionCallback(const sensor_msgs::NavSatFix& gps_msg) {
         
         initGPS = true;
         file_frist_gps_.close();
+        cout<<"gps init complite!!!"<<endl;
     }
 }
 
@@ -76,7 +77,7 @@ void mapping::odom_sub(const nav_msgs::Odometry& pose)
 
     //next, we'll publish the odometry message over ROS
     nav_msgs::Odometry odom;
-    odom.header.stamp = current_time;
+    odom.header.stamp = ros::Time::now();
     odom.header.frame_id = "map_odom";
 
     //set the position
@@ -93,38 +94,40 @@ void mapping::odom_sub(const nav_msgs::Odometry& pose)
 
     //publish the message
     odom_publish.publish(odom);
-    Eigen::Quaterniond Q(pose.pose.pose.orientation.w,pose.pose.pose.orientation.x,pose.pose.pose.orientation.y,pose.pose.pose.orientation.z);
-    Eigen::Isometry3d T = Eigen::Isometry3d::Identity();
-    // cout <<T<<endl;
-    T.rotate(Q);
-    // T.pretranslate(Eigen::Vector3d(pose.pose.pose.position.x,pose.pose.pose.position.y,0));
-    T.pretranslate(Eigen::Vector3d(odom.pose.pose.position.x,odom.pose.pose.position.y,0));
-    // // std::cout<<T<<std::endl;
-    // // Sophus::SE3 T_pose(Q,);
-    Eigen::Vector4d V4d_1;
-    Eigen::Vector4d V4d_2;
-    double map_x,map_y;
-    double res_inv = 10;
-    int origin=map.info.width*(map.info.height/2)+map.info.width/2;
-    if(count % 5 ==0){
-        for (size_t cp = 460800; cp < point_cloud1.points.size (); ++cp){
-            if(point_cloud1.points[cp].x > 0){ 
-                // cout<<point_cloud1.points[cp].x<<" "<<point_cloud1.points[cp].y<<endl;
-                V4d_1=Eigen::Vector4d(point_cloud1.points[cp].x,point_cloud1.points[cp].y,0,1);
-                V4d_2 = T* V4d_1;
-                map_x=V4d_2[0]*res_inv;
-                map_y=V4d_2[1]*res_inv;
-                int xyzposition=(int)map_x+(int)map_y*map.info.width;
-                int id;
-                id=origin+xyzposition;
-                map.data[id]=0;
-                // flag++;
-            }
-       }
-    }
-    map_pub_.publish(map);
-    count ++;
-    cout<<count<<endl;
+
+
+    // Eigen::Quaterniond Q(pose.pose.pose.orientation.w,pose.pose.pose.orientation.x,pose.pose.pose.orientation.y,pose.pose.pose.orientation.z);
+    // Eigen::Isometry3d T = Eigen::Isometry3d::Identity();
+    // // cout <<T<<endl;
+    // T.rotate(Q);
+    // // T.pretranslate(Eigen::Vector3d(pose.pose.pose.position.x,pose.pose.pose.position.y,0));
+    // T.pretranslate(Eigen::Vector3d(odom.pose.pose.position.x,odom.pose.pose.position.y,0));
+    // // // std::cout<<T<<std::endl;
+    // // // Sophus::SE3 T_pose(Q,);
+    // Eigen::Vector4d V4d_1;
+    // Eigen::Vector4d V4d_2;
+    // double map_x,map_y;
+    // double res_inv = 10;
+    // int origin=map.info.width*(map.info.height/2)+map.info.width/2;
+    // if(count % 5 ==0){
+    //     for (size_t cp = 460800; cp < point_cloud1.points.size (); ++cp){
+    //         if(point_cloud1.points[cp].x > 0){ 
+    //             // cout<<point_cloud1.points[cp].x<<" "<<point_cloud1.points[cp].y<<endl;
+    //             V4d_1=Eigen::Vector4d(point_cloud1.points[cp].x,point_cloud1.points[cp].y,0,1);
+    //             V4d_2 = T* V4d_1;
+    //             map_x=V4d_2[0]*res_inv;
+    //             map_y=V4d_2[1]*res_inv;
+    //             int xyzposition=(int)map_x+(int)map_y*map.info.width;
+    //             int id;
+    //             id=origin+xyzposition;
+    //             map.data[id]=0;
+    //             // flag++;
+    //         }
+    //    }
+    // }
+    // count ++;
+    // cout<<count<<endl;
+    // map_pub_.publish(map);
 }
 
 void mapping::point_cloud_sub(const sensor_msgs::PointCloud &pc1)

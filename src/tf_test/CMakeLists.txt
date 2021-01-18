@@ -62,3 +62,8 @@ target_link_libraries(point_cloud_map
   tf_test_lib
   ${Sophus_LIBRARIES}
   )
+
+add_executable(updatemap src/updatemap.cpp)
+target_link_libraries(updatemap 
+   tf_test_lib
+  )

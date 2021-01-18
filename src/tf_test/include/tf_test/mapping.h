@@ -11,10 +11,6 @@
 #include "../../ThirdParty/GeographicLib/include/LocalCartesian.hpp"
 #include "nav_msgs/OccupancyGrid.h"
 #include <nav_msgs/Odometry.h>
-#include <message_filters/subscriber.h>
-#include <message_filters/synchronizer.h>
-#include <message_filters/sync_policies/approximate_time.h>
-#include <message_filters/time_synchronizer.h>
 #include <sensor_msgs/PointCloud.h>
 #include <sensor_msgs/PointCloud2.h>
 #include <sensor_msgs/point_field_conversion.h>

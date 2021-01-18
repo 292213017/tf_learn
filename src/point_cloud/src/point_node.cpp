@@ -16,6 +16,8 @@ void pointCloud2ToZ(const sensor_msgs::PointCloud2 &msg)
 	sensor_msgs::PointCloud out_pointcloud;
 	sensor_msgs::PointCloud2 new_pointcloud;
 	point_cloud_conversion::convertPointCloud2ToPointCloud(msg, out_pointcloud);
+	out_pointcloud.header.frame_id = "map_base_link";
+	out_pointcloud.header.stamp =  ros::Time::now();
 	// for (int i=0; i<out_pointcloud.points.size(); i++) {
 	// 	cout << out_pointcloud.points[i].x << ", " << out_pointcloud.points[i].y << ", " << out_pointcloud.points[i].z << endl;
 	// }
