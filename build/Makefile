@@ -922,6 +922,19 @@ actionlib_generate_messages_lisp/fast:
 .PHONY : actionlib_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named map_grace
+
+# Build rule for target.
+map_grace: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 map_grace
+.PHONY : map_grace
+
+# fast build rule for target.
+map_grace/fast:
+	$(MAKE) -f lane_find/CMakeFiles/map_grace.dir/build.make lane_find/CMakeFiles/map_grace.dir/build
+.PHONY : map_grace/fast
+
+#=============================================================================
 # Target rules for targets named lane_find
 
 # Build rule for target.
@@ -998,6 +1011,19 @@ point_cloud_map: cmake_check_build_system
 point_cloud_map/fast:
 	$(MAKE) -f tf_test/CMakeFiles/point_cloud_map.dir/build.make tf_test/CMakeFiles/point_cloud_map.dir/build
 .PHONY : point_cloud_map/fast
+
+#=============================================================================
+# Target rules for targets named updatemap
+
+# Build rule for target.
+updatemap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 updatemap
+.PHONY : updatemap
+
+# fast build rule for target.
+updatemap/fast:
+	$(MAKE) -f tf_test/CMakeFiles/updatemap.dir/build.make tf_test/CMakeFiles/updatemap.dir/build
+.PHONY : updatemap/fast
 
 #=============================================================================
 # Target rules for targets named tf_test
@@ -1122,12 +1148,14 @@ help:
 	@echo "... tf_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... actionlib_generate_messages_lisp"
+	@echo "... map_grace"
 	@echo "... lane_find"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... point_cloud"
 	@echo "... tf_test_lib"
 	@echo "... point_cloud_map"
+	@echo "... updatemap"
 	@echo "... tf_test"
 	@echo "... gps_map"
 	@echo "... _catkin_empty_exported_target"

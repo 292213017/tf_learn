@@ -101,17 +101,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +123,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -196,6 +196,21 @@ point_cloud_map: tf_test/CMakeFiles/point_cloud_map.dir/rule
 point_cloud_map/fast:
 	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/point_cloud_map.dir/build.make tf_test/CMakeFiles/point_cloud_map.dir/build
 .PHONY : point_cloud_map/fast
+
+# Convenience name for target.
+tf_test/CMakeFiles/updatemap.dir/rule:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f CMakeFiles/Makefile2 tf_test/CMakeFiles/updatemap.dir/rule
+.PHONY : tf_test/CMakeFiles/updatemap.dir/rule
+
+# Convenience name for target.
+updatemap: tf_test/CMakeFiles/updatemap.dir/rule
+
+.PHONY : updatemap
+
+# fast build rule for target.
+updatemap/fast:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/updatemap.dir/build.make tf_test/CMakeFiles/updatemap.dir/build
+.PHONY : updatemap/fast
 
 # Convenience name for target.
 tf_test/CMakeFiles/tf_test.dir/rule:
@@ -404,6 +419,33 @@ src/tf_test.cpp.s:
 	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/tf_test.dir/build.make tf_test/CMakeFiles/tf_test.dir/src/tf_test.cpp.s
 .PHONY : src/tf_test.cpp.s
 
+src/updatemap.o: src/updatemap.cpp.o
+
+.PHONY : src/updatemap.o
+
+# target to build an object file
+src/updatemap.cpp.o:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/updatemap.dir/build.make tf_test/CMakeFiles/updatemap.dir/src/updatemap.cpp.o
+.PHONY : src/updatemap.cpp.o
+
+src/updatemap.i: src/updatemap.cpp.i
+
+.PHONY : src/updatemap.i
+
+# target to preprocess a source file
+src/updatemap.cpp.i:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/updatemap.dir/build.make tf_test/CMakeFiles/updatemap.dir/src/updatemap.cpp.i
+.PHONY : src/updatemap.cpp.i
+
+src/updatemap.s: src/updatemap.cpp.s
+
+.PHONY : src/updatemap.s
+
+# target to generate assembly for a file
+src/updatemap.cpp.s:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f tf_test/CMakeFiles/updatemap.dir/build.make tf_test/CMakeFiles/updatemap.dir/src/updatemap.cpp.s
+.PHONY : src/updatemap.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -414,14 +456,15 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... test"
 	@echo "... tf_test_lib"
 	@echo "... point_cloud_map"
+	@echo "... updatemap"
 	@echo "... rebuild_cache"
 	@echo "... tf_test"
 	@echo "... gps_map"
 	@echo "... _catkin_empty_exported_target"
-	@echo "... install/local"
-	@echo "... test"
 	@echo "... src/gps_map_node.o"
 	@echo "... src/gps_map_node.i"
 	@echo "... src/gps_map_node.s"
@@ -440,6 +483,9 @@ help:
 	@echo "... src/tf_test.o"
 	@echo "... src/tf_test.i"
 	@echo "... src/tf_test.s"
+	@echo "... src/updatemap.o"
+	@echo "... src/updatemap.i"
+	@echo "... src/updatemap.s"
 .PHONY : help
 
 

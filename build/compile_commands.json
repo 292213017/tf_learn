@@ -41,6 +41,11 @@
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/lane_find",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"lane_find\\\" -isystem /usr/include/opencv -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=gnu++14 -o CMakeFiles/map_grace.dir/src/map_grace.cpp.o -c /home/liuhy/workspace/tf_learn/src/lane_find/src/map_grace.cpp",
+  "file": "/home/liuhy/workspace/tf_learn/src/lane_find/src/map_grace.cpp"
+},
+{
+  "directory": "/home/liuhy/workspace/tf_learn/build/lane_find",
   "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"lane_find\\\" -isystem /usr/include/opencv -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=gnu++14 -o CMakeFiles/lane_find.dir/src/lane_node.cpp.o -c /home/liuhy/workspace/tf_learn/src/lane_find/src/lane_node.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/lane_find/src/lane_node.cpp"
 },
@@ -68,6 +73,11 @@
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
   "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g   -std=gnu++14 -o CMakeFiles/point_cloud_map.dir/src/pc_map_node.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/pc_map_node.cpp",
   "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/pc_map_node.cpp"
+},
+{
+  "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"tf_test\\\" -I/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus -I/usr/include/eigen3 -I/home/liuhy/workspace/tf_learn/src/tf_test/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include -I/home/svslocal/include/sophus  -g   -std=gnu++14 -o CMakeFiles/updatemap.dir/src/updatemap.cpp.o -c /home/liuhy/workspace/tf_learn/src/tf_test/src/updatemap.cpp",
+  "file": "/home/liuhy/workspace/tf_learn/src/tf_test/src/updatemap.cpp"
 },
 {
   "directory": "/home/liuhy/workspace/tf_learn/build/tf_test",

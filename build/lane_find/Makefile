@@ -903,6 +903,21 @@ actionlib_generate_messages_lisp/fast:
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
+lane_find/CMakeFiles/map_grace.dir/rule:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f CMakeFiles/Makefile2 lane_find/CMakeFiles/map_grace.dir/rule
+.PHONY : lane_find/CMakeFiles/map_grace.dir/rule
+
+# Convenience name for target.
+map_grace: lane_find/CMakeFiles/map_grace.dir/rule
+
+.PHONY : map_grace
+
+# fast build rule for target.
+map_grace/fast:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f lane_find/CMakeFiles/map_grace.dir/build.make lane_find/CMakeFiles/map_grace.dir/build
+.PHONY : map_grace/fast
+
+# Convenience name for target.
 lane_find/CMakeFiles/lane_find.dir/rule:
 	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f CMakeFiles/Makefile2 lane_find/CMakeFiles/lane_find.dir/rule
 .PHONY : lane_find/CMakeFiles/lane_find.dir/rule
@@ -1001,6 +1016,33 @@ src/lane_node.cpp.s:
 	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f lane_find/CMakeFiles/lane_find.dir/build.make lane_find/CMakeFiles/lane_find.dir/src/lane_node.cpp.s
 .PHONY : src/lane_node.cpp.s
 
+src/map_grace.o: src/map_grace.cpp.o
+
+.PHONY : src/map_grace.o
+
+# target to build an object file
+src/map_grace.cpp.o:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f lane_find/CMakeFiles/map_grace.dir/build.make lane_find/CMakeFiles/map_grace.dir/src/map_grace.cpp.o
+.PHONY : src/map_grace.cpp.o
+
+src/map_grace.i: src/map_grace.cpp.i
+
+.PHONY : src/map_grace.i
+
+# target to preprocess a source file
+src/map_grace.cpp.i:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f lane_find/CMakeFiles/map_grace.dir/build.make lane_find/CMakeFiles/map_grace.dir/src/map_grace.cpp.i
+.PHONY : src/map_grace.cpp.i
+
+src/map_grace.s: src/map_grace.cpp.s
+
+.PHONY : src/map_grace.s
+
+# target to generate assembly for a file
+src/map_grace.cpp.s:
+	cd /home/liuhy/workspace/tf_learn/build && $(MAKE) -f lane_find/CMakeFiles/map_grace.dir/build.make lane_find/CMakeFiles/map_grace.dir/src/map_grace.cpp.s
+.PHONY : src/map_grace.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1063,6 +1105,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... test"
+	@echo "... map_grace"
 	@echo "... lane_find"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
@@ -1072,6 +1115,9 @@ help:
 	@echo "... src/lane_node.o"
 	@echo "... src/lane_node.i"
 	@echo "... src/lane_node.s"
+	@echo "... src/map_grace.o"
+	@echo "... src/map_grace.i"
+	@echo "... src/map_grace.s"
 .PHONY : help
 
 
