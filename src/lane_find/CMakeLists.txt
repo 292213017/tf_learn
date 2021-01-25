@@ -43,3 +43,9 @@ target_link_libraries(lane_find
         lane_find_lib
 )
 
+add_executable(map_grace src/map_grace.cpp)
+target_link_libraries(map_grace
+        lane_find_lib
+)
+
+

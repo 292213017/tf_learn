@@ -1,8 +1,8 @@
-# Install script for directory: /home/liuhy/projects/tf_learn/src/lane_find
+# Install script for directory: /home/liuhy/workspace/tf_learn/src/lane_find
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liuhy/projects/tf_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/liuhy/workspace/tf_learn/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,32 +38,32 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuhy/projects/tf_learn/build/lane_find/catkin_generated/installspace/lane_find.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuhy/workspace/tf_learn/build/lane_find/catkin_generated/installspace/lane_find.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lane_find/cmake" TYPE FILE FILES
-    "/home/liuhy/projects/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig.cmake"
-    "/home/liuhy/projects/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig-version.cmake"
+    "/home/liuhy/workspace/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig.cmake"
+    "/home/liuhy/workspace/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lane_find" TYPE FILE FILES "/home/liuhy/projects/tf_learn/src/lane_find/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lane_find" TYPE FILE FILES "/home/liuhy/workspace/tf_learn/src/lane_find/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuhy/projects/tf_learn/build/lane_find/catkin_generated/installspace/lane_find.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuhy/workspace/tf_learn/build/lane_find/catkin_generated/installspace/lane_find.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lane_find/cmake" TYPE FILE FILES
-    "/home/liuhy/projects/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig.cmake"
-    "/home/liuhy/projects/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig-version.cmake"
+    "/home/liuhy/workspace/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig.cmake"
+    "/home/liuhy/workspace/tf_learn/build/lane_find/catkin_generated/installspace/lane_findConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lane_find" TYPE FILE FILES "/home/liuhy/projects/tf_learn/src/lane_find/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lane_find" TYPE FILE FILES "/home/liuhy/workspace/tf_learn/src/lane_find/package.xml")
 endif()
 

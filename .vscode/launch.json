@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             // "program": "${workspaceFolder}/devel/lib/tf_test/gps_map",
-            "program": "${workspaceFolder}/devel/lib/lane_find/lane_find",
+            "program": "${workspaceFolder}/devel/lib/lane_find/map_grace",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

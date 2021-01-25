@@ -13,6 +13,9 @@ find_package(catkin REQUIRED COMPONENTS
   tf
 )
 
+find_package( Sophus REQUIRED )
+include_directories( ${Sophus_INCLUDE_DIRS} )
+
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES tf_test
@@ -20,7 +23,8 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-add_subdirectory(./ThirdParty/GeographicLib/)
+add_subdirectory(./ThirdParty/GeographicLib/
+)
 
 
 include_directories(
@@ -29,11 +33,13 @@ include_directories(
   ${EIGEN3_INCLUDE_DIR}
   /usr/include/eigen3
   ./ThirdParty/GeographicLib/include/
+  /home/svslocal/include/sophus
 )
 
 add_library(tf_test_lib
   src/odom.cpp
   src/gps_wrapper.cpp
+  src/mapping.cpp
 )
 
 target_link_libraries(tf_test_lib
@@ -49,4 +55,15 @@ target_link_libraries(tf_test
 add_executable(gps_map src/gps_map_node.cpp)
 target_link_libraries(gps_map 
   tf_test_lib
+  )
+
+add_executable(point_cloud_map src/pc_map_node.cpp)
+target_link_libraries(point_cloud_map 
+  tf_test_lib
+  ${Sophus_LIBRARIES}
+  )
+
+add_executable(updatemap src/updatemap.cpp)
+target_link_libraries(updatemap 
+   tf_test_lib
   )

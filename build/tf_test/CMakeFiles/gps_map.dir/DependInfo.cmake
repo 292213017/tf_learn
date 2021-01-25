@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/liuhy/projects/tf_learn/src/tf_test/src/gps_map_node.cpp" "/home/liuhy/projects/tf_learn/build/tf_test/CMakeFiles/gps_map.dir/src/gps_map_node.cpp.o"
+  "/home/liuhy/workspace/tf_learn/src/tf_test/src/gps_map_node.cpp" "/home/liuhy/workspace/tf_learn/build/tf_test/CMakeFiles/gps_map.dir/src/gps_map_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,17 +17,19 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/liuhy/projects/tf_learn/src/tf_test/include"
+  "/home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/Sophus"
+  "/usr/include/eigen3"
+  "/home/liuhy/workspace/tf_learn/src/tf_test/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/usr/include/eigen3"
-  "/home/liuhy/projects/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include"
+  "/home/liuhy/workspace/tf_learn/src/tf_test/./ThirdParty/GeographicLib/include"
+  "/home/svslocal/include/sophus"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/liuhy/projects/tf_learn/build/tf_test/CMakeFiles/tf_test_lib.dir/DependInfo.cmake"
-  "/home/liuhy/projects/tf_learn/build/tf_test/ThirdParty/GeographicLib/CMakeFiles/libGeographiccc.dir/DependInfo.cmake"
+  "/home/liuhy/workspace/tf_learn/build/tf_test/CMakeFiles/tf_test_lib.dir/DependInfo.cmake"
+  "/home/liuhy/workspace/tf_learn/build/tf_test/ThirdParty/GeographicLib/CMakeFiles/libGeographiccc.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

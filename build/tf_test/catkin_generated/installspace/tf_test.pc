@@ -1,4 +1,4 @@
-prefix=/home/liuhy/projects/tf_learn/install
+prefix=/home/liuhy/workspace/tf_learn/install
 
 Name: tf_test
 Description: Description of tf_test

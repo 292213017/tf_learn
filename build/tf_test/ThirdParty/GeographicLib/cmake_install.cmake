@@ -1,8 +1,8 @@
-# Install script for directory: /home/liuhy/projects/tf_learn/src/tf_test/ThirdParty/GeographicLib
+# Install script for directory: /home/liuhy/workspace/tf_learn/src/tf_test/ThirdParty/GeographicLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liuhy/projects/tf_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/liuhy/workspace/tf_learn/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -42,7 +42,6 @@ void mapload::local(const sensor_msgs::NavSatFix& gps_msg)
     odom_trans.transform.rotation = odom_quat;
     //send the transform
     odom_world_broadcaster.sendTransform(odom_trans);
-    odom_world_broadcaster;
 }
 
 

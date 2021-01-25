@@ -141,7 +141,7 @@ void gpstest::updatemap(const GpsLocalization::xyzPositionDataPtr xyz_data)
     int res_inv = 1/resolution;
     int lenth=(1.5/resolution)+3;
     int origin=map.info.width*(map.info.height/2)+map.info.width/2;
-    int xyzposition=(int)xyz_data->x*res_inv+(int)xyz_data->y*res_inv*map.info.width;
+    int xyzposition=(int)(xyz_data->x*res_inv)+(int)(xyz_data->y*res_inv*map.info.width);
     int x,y,id;
     for(int i=-lenth;i<=lenth;i++)
         for(int j=-lenth;j<=lenth;j++)

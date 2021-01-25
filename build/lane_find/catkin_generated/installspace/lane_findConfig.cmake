@@ -67,14 +67,14 @@ set(lane_find_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(lane_find_SOURCE_PREFIX /home/liuhy/projects/tf_learn/src/lane_find)
-  set(lane_find_DEVEL_PREFIX /home/liuhy/projects/tf_learn/devel)
+  set(lane_find_SOURCE_PREFIX /home/liuhy/workspace/tf_learn/src/lane_find)
+  set(lane_find_DEVEL_PREFIX /home/liuhy/workspace/tf_learn/devel)
   set(lane_find_INSTALL_PREFIX "")
   set(lane_find_PREFIX ${lane_find_DEVEL_PREFIX})
 else()
   set(lane_find_SOURCE_PREFIX "")
   set(lane_find_DEVEL_PREFIX "")
-  set(lane_find_INSTALL_PREFIX /home/liuhy/projects/tf_learn/install)
+  set(lane_find_INSTALL_PREFIX /home/liuhy/workspace/tf_learn/install)
   set(lane_find_PREFIX ${lane_find_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/liuhy/projects/tf_learn/install/lib;/home/liuhy/projects/gpsmapping/build/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/liuhy/workspace/tf_learn/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

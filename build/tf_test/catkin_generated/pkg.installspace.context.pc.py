@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "tf_test"
-PROJECT_SPACE_DIR = "/home/liuhy/projects/tf_learn/install"
+PROJECT_SPACE_DIR = "/home/liuhy/workspace/tf_learn/install"
 PROJECT_VERSION = "0.0.0"
